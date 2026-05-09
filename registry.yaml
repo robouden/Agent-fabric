@@ -1,0 +1,670 @@
+# Agent Fabric Registry
+# Human-readable manifest of every skill in this repository, grouped by provenance.
+# Hermes auto-discovers skills from the skills/ directory; this file exists for
+# discoverability, orchestrator coordination, and tooling. Keep in sync when
+# adding/removing skills.
+
+agents:
+  - name: orchestrator
+    file: skills/orchestrator/SKILL.md
+    description: Coordinate work across all agents
+    category: meta
+    skills: [project-context, game-development, mempalace-memory, to-prd, to-issues, codeberg-triage, qa]
+    status: active
+    default: true
+
+  - name: agent-creator
+    file: skills/agent-creator/SKILL.md
+    description: Create and manage new agents
+    category: meta
+    skills: [write-a-skill]
+    status: active
+
+  - name: code-writer
+    file: skills/code-writer/SKILL.md
+    description: Write production-quality code
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, dependency-management, git-workflow, database-operations, api-design, frontend-frameworks, landing-page-creation, performance-optimization, pixijs, openai-image-generation, project-context, mempalace-memory, tdd, design-an-interface]
+    status: active
+
+  - name: code-reviewer
+    file: skills/code-reviewer/SKILL.md
+    description: Review code for quality, security, and structure; suggest and apply refactoring improvements
+    category: quality
+    skills: [disciplined-coding, file-operations, code-analysis, security-audit, code-generation, api-design, database-operations, frontend-frameworks, landing-page-creation, performance-optimization, pixijs, project-context, mempalace-memory, improve-codebase-architecture, request-refactor-plan, design-an-interface]
+    status: active
+
+  - name: documenter
+    file: skills/documenter/SKILL.md
+    description: Generate and maintain documentation
+    category: documentation
+    skills: [file-operations, markdown-generation, git-workflow, api-design, edit-article, to-prd, ubiquitous-language]
+    status: active
+
+  - name: devops
+    file: skills/devops/SKILL.md
+    description: CI/CD, infrastructure, and deployment
+    category: operations
+    skills: [file-operations, terminal-commands, docker, ci-cd, kubernetes, git-workflow, database-operations, observability, project-context]
+    status: active
+
+  - name: seo-aeo-expert
+    file: skills/seo-aeo-expert/SKILL.md
+    description: Full-pipeline SEO and AEO strategist for Next.js/React sites — keyword research, content strategy, on-page SEO, structured data, Core Web Vitals, and Answer Engine Optimization
+    category: marketing
+    skills: [web-search, code-analysis, code-generation, markdown-generation, performance-optimization, file-operations, project-context]
+    status: active
+
+  - name: researcher
+    file: skills/researcher/SKILL.md
+    description: Research best practices and solutions
+    category: analysis
+    skills: [web-search, code-analysis, zoom-out]
+    status: active
+
+  - name: tester
+    file: skills/tester/SKILL.md
+    description: Generate tests and validate behavior
+    category: quality
+    skills: [disciplined-coding, file-operations, code-generation, terminal-commands, safari-testing, git-workflow, database-operations, testing-infrastructure, performance-optimization, unity-game-testing, project-context, mempalace-memory, tdd, diagnose, qa]
+    status: active
+
+  - name: code-investigator
+    file: skills/code-investigator/SKILL.md
+    description: Investigate code problems, bugs, and unexpected behavior; produce root-cause analysis reports
+    category: analysis
+    skills: [disciplined-coding, file-operations, terminal-commands, code-analysis, safari-testing, project-context, mempalace-memory, diagnose, triage-issue, zoom-out]
+    status: active
+
+  - name: game-audio-engineer
+    file: skills/game-audio-engineer/SKILL.md
+    description: Design and implement interactive game audio systems, adaptive music, and runtime audio budgets.
+    category: development
+    skills: [disciplined-coding, file-operations, code-analysis, code-generation, performance-optimization, terminal-commands, observability, audio-middleware, elevenlabs-audio-generation, project-context]
+    status: active
+
+  - name: game-designer
+    file: skills/game-designer/SKILL.md
+    description: Shape core loops, mechanics, progression, and tuning into implementation-ready game design specifications.
+    category: analysis
+    skills: [file-operations, markdown-generation, code-analysis, testing-infrastructure, game-design-documentation, project-context, mempalace-memory]
+    status: active
+
+  - name: level-designer
+    file: skills/level-designer/SKILL.md
+    description: Design readable spaces, encounter flow, and pacing plans for levels, missions, and playable areas.
+    category: analysis
+    skills: [file-operations, markdown-generation, code-analysis, testing-infrastructure, game-design-documentation, project-context, mempalace-memory]
+    status: active
+
+  - name: narrative-designer
+    file: skills/narrative-designer/SKILL.md
+    description: Create interactive story structure, dialogue, lore, and consequence design that fits gameplay realities.
+    category: analysis
+    skills: [file-operations, markdown-generation, code-analysis, game-design-documentation, project-context]
+    status: active
+
+  - name: technical-artist
+    file: skills/technical-artist/SKILL.md
+    description: Bridge art direction and runtime constraints through asset, shader, VFX, and optimization guidance.
+    category: development
+    skills: [disciplined-coding, file-operations, code-analysis, code-generation, landing-page-creation, performance-optimization, terminal-commands, openai-image-generation, reference-based-image-generation, pixijs, shader-programming, png-optimization, project-context]
+    status: active
+
+  - name: unity-architect
+    file: skills/unity-architect/SKILL.md
+    description: Design scalable, data-driven Unity architectures with decoupled systems and clean prefab boundaries.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, dependency-management, testing-infrastructure, unity-scripting, unity-mcp-validation, unity-game-testing, project-context, mempalace-memory]
+    status: active
+
+  - name: unity-editor-tool-developer
+    file: skills/unity-editor-tool-developer/SKILL.md
+    description: Build Unity editor tooling that automates repetitive work and enforces project standards.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, terminal-commands, testing-infrastructure, unity-scripting, unity-mcp-validation, project-context, mempalace-memory]
+    status: active
+
+  - name: unity-gameplay-developer
+    file: skills/unity-gameplay-developer/SKILL.md
+    description: Implement Unity gameplay and game systems with live editor/runtime validation using Unity MCP.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, terminal-commands, testing-infrastructure, unity-scripting, unity-mcp-validation, unity-game-testing, project-context, mempalace-memory]
+    status: active
+
+  - name: unity-multiplayer-engineer
+    file: skills/unity-multiplayer-engineer/SKILL.md
+    description: Implement authoritative, latency-aware Unity multiplayer systems with reliable sync and validation.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, api-design, performance-optimization, testing-infrastructure, unity-scripting, unity-mcp-validation, unity-game-testing, project-context]
+    status: active
+
+  - name: unity-shader-graph-artist
+    file: skills/unity-shader-graph-artist/SKILL.md
+    description: Create reusable Unity materials and effects with Shader Graph while respecting render budgets.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, performance-optimization, unity-scripting, unity-mcp-validation, shader-programming, project-context]
+    status: active
+
+  - name: godot-gameplay-scripter
+    file: skills/godot-gameplay-scripter/SKILL.md
+    description: Implement typed, signal-driven Godot gameplay systems with clean scene composition.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, testing-infrastructure, godot-gdscript, project-context]
+    status: active
+
+  - name: godot-multiplayer-engineer
+    file: skills/godot-multiplayer-engineer/SKILL.md
+    description: Build Godot multiplayer systems with clear authority, RPC design, and sync reliability.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, api-design, performance-optimization, testing-infrastructure, godot-gdscript, project-context]
+    status: active
+
+  - name: godot-shader-developer
+    file: skills/godot-shader-developer/SKILL.md
+    description: Author performant Godot shaders and effects for 2D and 3D projects.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, performance-optimization, terminal-commands, godot-gdscript, shader-programming, project-context]
+    status: active
+
+  - name: unreal-multiplayer-architect
+    file: skills/unreal-multiplayer-architect/SKILL.md
+    description: Architect Unreal multiplayer around server authority, replication correctness, and scalable session design.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, api-design, performance-optimization, testing-infrastructure, unreal-cpp, project-context]
+    status: active
+
+  - name: unreal-systems-engineer
+    file: skills/unreal-systems-engineer/SKILL.md
+    description: Build performant Unreal gameplay systems at the C++ and Blueprint boundary.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, dependency-management, performance-optimization, testing-infrastructure, unreal-cpp, project-context]
+    status: active
+
+  - name: unreal-technical-artist
+    file: skills/unreal-technical-artist/SKILL.md
+    description: Own Unreal materials, Niagara, PCG, and rendering workflows with strong optimization discipline.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, performance-optimization, terminal-commands, unreal-cpp, shader-programming, project-context]
+    status: active
+
+  - name: unreal-world-builder
+    file: skills/unreal-world-builder/SKILL.md
+    description: Plan and optimize Unreal environments, streaming strategy, and world-scale content workflows.
+    category: development
+    skills: [disciplined-coding, file-operations, markdown-generation, code-analysis, performance-optimization, unreal-cpp, project-context]
+    status: active
+
+  - name: blender-addon-engineer
+    file: skills/blender-addon-engineer/SKILL.md
+    description: Create Blender add-ons and automation tools for asset validation, export, and content workflows.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, terminal-commands, testing-infrastructure, blender-python, project-context]
+    status: active
+
+  - name: roblox-avatar-creator
+    file: skills/roblox-avatar-creator/SKILL.md
+    description: Design Roblox avatar and UGC asset workflows that satisfy platform constraints and user customization goals.
+    category: development
+    skills: [file-operations, markdown-generation, code-analysis, code-generation, luau, project-context]
+    status: active
+
+  - name: roblox-experience-designer
+    file: skills/roblox-experience-designer/SKILL.md
+    description: Design Roblox-native onboarding, engagement, progression, monetization, and social loops.
+    category: analysis
+    skills: [file-operations, markdown-generation, code-analysis, database-operations, api-design, luau, project-context]
+    status: active
+
+  - name: roblox-systems-scripter
+    file: skills/roblox-systems-scripter/SKILL.md
+    description: Implement secure, scalable Roblox gameplay and persistence systems in Luau.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, database-operations, api-design, testing-infrastructure, luau, project-context]
+    status: active
+
+  - name: pixijs-prototype-specialist
+    file: skills/pixijs-prototype-specialist/SKILL.md
+    description: Build PixiJS web game prototypes from designs with strong visual QA, touch-first layout, and backend-ready contracts.
+    category: development
+    skills: [disciplined-coding, file-operations, code-generation, code-analysis, dependency-management, frontend-frameworks, landing-page-creation, pixijs, api-design, testing-infrastructure, safari-testing, terminal-commands, performance-optimization, openai-image-generation, reference-based-image-generation, png-optimization, project-context]
+    status: active
+
+  - name: pixijs-architect
+    file: skills/pixijs-architect/SKILL.md
+    description: Design scalable PixiJS game architectures with clean scene graphs, entity-component patterns, state machines, and asset management strategies
+    category: development
+    skills: [disciplined-coding, pixijs, file-operations, code-generation, code-analysis, performance-optimization, project-context]
+    status: active
+
+  - name: pixijs-multiplayer-engineer
+    file: skills/pixijs-multiplayer-engineer/SKILL.md
+    description: Build PixiJS multiplayer game systems using WebSockets, Colyseus, or socket.io with reliable sync, client prediction, and latency-aware design
+    category: development
+    skills: [disciplined-coding, pixijs, file-operations, code-generation, code-analysis, api-design, performance-optimization, testing-infrastructure, project-context]
+    status: active
+
+  - name: pixijs-shader-developer
+    file: skills/pixijs-shader-developer/SKILL.md
+    description: Write GLSL/WebGL shaders and PixiJS Filter subclasses for visual effects, post-processing, and custom rendering in PixiJS games
+    category: development
+    skills: [disciplined-coding, pixijs, shader-programming, file-operations, code-generation, code-analysis, performance-optimization, project-context]
+    status: active
+
+  - name: pixijs-tooling-developer
+    file: skills/pixijs-tooling-developer/SKILL.md
+    description: Build PixiJS project tooling including asset pipelines, texture atlases, level editors, build scripts, and developer workflow automation
+    category: development
+    skills: [disciplined-coding, pixijs, file-operations, code-generation, code-analysis, terminal-commands, dependency-management, png-optimization, project-context]
+    status: active
+
+skills:
+  - name: project-context
+    file: skills/project-context/SKILL.md
+    description: Read and write the persistent project registry so agents know which projects exist and where they live on disk
+    category: core
+    status: active
+
+  - name: file-operations
+    file: skills/file-operations/SKILL.md
+    description: Read, write, search, and navigate files in the workspace
+    category: core
+    status: active
+
+  - name: terminal-commands
+    file: skills/terminal-commands/SKILL.md
+    description: Execute shell commands, install packages, run scripts
+    category: core
+    status: active
+
+  - name: code-generation
+    file: skills/code-generation/SKILL.md
+    description: Generate code following patterns, conventions, and best practices
+    category: development
+    status: active
+
+  - name: code-analysis
+    file: skills/code-analysis/SKILL.md
+    description: Analyze code structure, detect patterns, find issues
+    category: development
+    status: active
+
+  - name: web-search
+    file: skills/web-search/SKILL.md
+    description: Search the web for documentation, best practices, and solutions
+    category: research
+    status: active
+
+  - name: security-audit
+    file: skills/security-audit/SKILL.md
+    description: Check for vulnerabilities, CVEs, secrets, and security anti-patterns
+    category: quality
+    status: active
+
+  - name: dependency-management
+    file: skills/dependency-management/SKILL.md
+    description: Manage project dependencies, check versions, validate CVEs
+    category: development
+    status: active
+
+  - name: markdown-generation
+    file: skills/markdown-generation/SKILL.md
+    description: Generate well-structured Markdown documents with diagrams
+    category: documentation
+    status: active
+
+  - name: docker
+    file: skills/docker/SKILL.md
+    description: Create and manage Dockerfiles, compose files, and container configs
+    category: operations
+    status: active
+
+  - name: ci-cd
+    file: skills/ci-cd/SKILL.md
+    description: Create and manage CI/CD pipelines (Forgejo Actions on Codeberg, GitHub Actions on the GitHub mirror)
+    category: operations
+    status: active
+
+  - name: kubernetes
+    file: skills/kubernetes/SKILL.md
+    description: Deploy and manage applications on Kubernetes clusters with manifests, GitHub Actions CI/CD, and ingress TLS configuration
+    category: operations
+    status: active
+
+  - name: git-workflow
+    file: skills/git-workflow/SKILL.md
+    description: Branch, commit, push, and create pull requests via git plus the relevant forge API (Forgejo on Codeberg, gh on GitHub)
+    category: core
+    status: active
+
+  - name: database-operations
+    file: skills/database-operations/SKILL.md
+    description: Schema design, migrations, seeding, query optimization, and backup/recovery strategies
+    category: data
+    status: active
+
+  - name: api-design
+    file: skills/api-design/SKILL.md
+    description: REST and GraphQL API design patterns, OpenAPI specifications, versioning, and backwards compatibility
+    category: api
+    status: active
+
+  - name: frontend-frameworks
+    file: skills/frontend-frameworks/SKILL.md
+    description: React, Vue, Angular, and Svelte patterns including state management, component design, and accessibility
+    category: frontend
+    status: active
+
+  - name: landing-page-creation
+    file: skills/landing-page-creation/SKILL.md
+    description: Create polished landing pages and marketing microsites with accessible responsive layouts, clear conversion paths, and lightweight performance-minded implementation
+    category: frontend
+    status: active
+
+  - name: pixijs
+    file: skills/pixijs/SKILL.md
+    description: PixiJS game and prototype patterns for fixed logical resolution, crisp rendering, contain scaling, safe-area-aware layout, and touch-first UI
+    category: frontend
+    status: active
+
+  - name: observability
+    file: skills/observability/SKILL.md
+    description: Logging, metrics, distributed tracing, alerting, and dashboard design for production systems
+    category: observability
+    status: active
+
+  - name: performance-optimization
+    file: skills/performance-optimization/SKILL.md
+    description: Profiling, caching strategies, query optimization, load testing, and performance benchmarking
+    category: performance
+    status: active
+
+  - name: testing-infrastructure
+    file: skills/testing-infrastructure/SKILL.md
+    description: Test data management, fixtures, factories, Testcontainers, flakiness handling, and test pyramid strategy
+    category: testing
+    status: active
+
+  - name: safari-testing
+    file: skills/safari-testing/SKILL.md
+    description: Safari and WebKit-focused QA for local web apps including MCP/browser automation checks, console-network diagnostics, canvas-first validation, and blocker reporting
+    category: testing
+    status: active
+
+  - name: openai-image-generation
+    file: skills/openai-image-generation/SKILL.md
+    description: Generate game UI assets, concept art, and textures from text prompts using the OpenAI Images API (gpt-image-1 / DALL-E 3)
+    category: ai-generation
+    status: active
+
+  - name: reference-based-image-generation
+    file: skills/reference-based-image-generation/SKILL.md
+    description: Generate visually consistent image sets by creating a reference image first, then using it as input context for derivative frames and variants
+    category: ai-generation
+    status: active
+
+  - name: elevenlabs-audio-generation
+    file: skills/elevenlabs-audio-generation/SKILL.md
+    description: Generate short game-ready sound effects, UI tones, and bark-style voice assets from text prompts using the ElevenLabs Sound Generation API
+    category: ai-generation
+    status: active
+
+  - name: unity-scripting
+    file: skills/unity-scripting/SKILL.md
+    description: Unity C# scripting patterns using MonoBehaviour, ScriptableObjects, event channels, dependency injection, and testable component design
+    category: game
+    status: active
+
+  - name: unity-mcp-validation
+    file: skills/unity-mcp-validation/SKILL.md
+    description: Practical Unity MCP workflows for connectivity checks, live editor/runtime validation, and separating gameplay regressions from editor/tooling noise
+    category: game
+    status: active
+
+  - name: unity-game-testing
+    file: skills/unity-game-testing/SKILL.md
+    description: Structured Unity playtesting workflows for play mode validation, checkpoint-based gameplay coverage, console triage, screenshots, and blocker reporting
+    category: game
+    status: active
+
+  - name: godot-gdscript
+    file: skills/godot-gdscript/SKILL.md
+    description: GDScript patterns for Godot 4 including typed scripting, signal-driven architecture, scene composition, and resource management
+    category: game
+    status: active
+
+  - name: unreal-cpp
+    file: skills/unreal-cpp/SKILL.md
+    description: Unreal Engine C++ and Blueprint patterns including UPROPERTY/UFUNCTION macros, GAS, component design, and reflection system usage
+    category: game
+    status: active
+
+  - name: shader-programming
+    file: skills/shader-programming/SKILL.md
+    description: Cross-platform shader authoring for GLSL/HLSL/ShaderLab, Shader Graph, Godot shaders, Niagara, and WebGL/PixiJS Filter patterns
+    category: game
+    status: active
+
+  - name: audio-middleware
+    file: skills/audio-middleware/SKILL.md
+    description: Game audio integration patterns for FMOD Studio and Wwise including event architecture, spatial audio, adaptive music, and runtime budget enforcement
+    category: game
+    status: active
+
+  - name: game-design-documentation
+    file: skills/game-design-documentation/SKILL.md
+    description: Structured game design documentation including GDD outlines, runtime-accurate mechanic specs, tuning tables, playtest checkpoints, and level design briefs
+    category: game
+    status: active
+
+  - name: luau
+    file: skills/luau/SKILL.md
+    description: Luau scripting patterns for Roblox including typed Luau, ModuleScript architecture, RemoteEvent design, DataStore persistence, and secure server-client boundaries
+    category: game
+    status: active
+
+  - name: blender-python
+    file: skills/blender-python/SKILL.md
+    description: Blender Python scripting for add-ons, asset automation, batch export workflows, and validation tools using bpy
+    category: game
+    status: active
+
+  - name: game-development
+    file: skills/game-development/SKILL.md
+    description: Coordinate phased PixiJS game-development delivery across design, implementation, runtime validation, QA, and PR handoff
+    category: game
+    status: active
+
+  - name: png-optimization
+    file: skills/png-optimization/SKILL.md
+    description: Lossless and lossy PNG compression for game assets in PixiJS/web projects using pngquant and optipng
+    category: game
+    status: active
+
+  - name: mempalace-memory
+    file: skills/mempalace-memory/SKILL.md
+    description: Query and store persistent project knowledge using the MemPalace MCP server for cross-session memory
+    category: core
+    status: active
+
+  - name: disciplined-coding
+    file: skills/disciplined-coding/SKILL.md
+    description: Behavioral guidelines enforcing deliberate thinking, simplicity, surgical edits, and verifiable outcomes
+    category: core
+    status: active
+
+  - name: caveman
+    file: skills/caveman/SKILL.md
+    description: Ultra-compressed communication mode for terse, accurate technical responses when the user asks for brevity or caveman mode
+    category: core
+    status: active
+
+  - name: design-an-interface
+    file: skills/design-an-interface/SKILL.md
+    description: Generate and compare multiple radically different interface designs for a module before implementation
+    category: development
+    status: active
+
+  - name: diagnose
+    file: skills/diagnose/SKILL.md
+    description: Disciplined diagnosis loop for hard bugs and performance regressions
+    category: quality
+    status: active
+
+  - name: domain-model
+    file: skills/domain-model/SKILL.md
+    description: Stress-test plans against domain language, existing context docs, and ADRs while refining terminology and decisions
+    category: analysis
+    status: active
+
+  - name: edit-article
+    file: skills/edit-article/SKILL.md
+    description: Edit article drafts by restructuring sections, improving dependency order, and tightening prose
+    category: documentation
+    status: active
+
+  - name: codeberg-triage
+    file: skills/codeberg-triage/SKILL.md
+    description: Triage Codeberg issues through labels, recommendations, issue comments, and maintainer-approved state transitions via the Forgejo API
+    category: quality
+    status: active
+
+  - name: grill-me
+    file: skills/grill-me/SKILL.md
+    description: Interview the user relentlessly about a plan or design, one question at a time, until shared understanding is reached
+    category: analysis
+    status: active
+
+  - name: improve-codebase-architecture
+    file: skills/improve-codebase-architecture/SKILL.md
+    description: Find codebase deepening opportunities that improve locality, leverage, testability, and AI navigability
+    category: quality
+    status: active
+
+  - name: qa
+    file: skills/qa/SKILL.md
+    description: Run conversational QA sessions where user-reported bugs are clarified, scoped, and filed as durable issues on Codeberg or GitHub
+    category: testing
+    status: active
+
+  - name: request-refactor-plan
+    file: skills/request-refactor-plan/SKILL.md
+    description: Create a detailed refactor plan broken into tiny safe commits and capture it as a Codeberg/GitHub issue or planning artifact
+    category: analysis
+    status: active
+
+  - name: tdd
+    file: skills/tdd/SKILL.md
+    description: Test-driven development using vertical red-green-refactor cycles that test observable behavior through public interfaces
+    category: testing
+    status: active
+
+  - name: to-issues
+    file: skills/to-issues/SKILL.md
+    description: Break a plan, spec, or PRD into independently grabbable Codeberg/GitHub issues using vertical tracer-bullet slices
+    category: analysis
+    status: active
+
+  - name: to-prd
+    file: skills/to-prd/SKILL.md
+    description: Synthesize conversation and codebase context into a product requirements document and optionally file it as a Codeberg/GitHub issue
+    category: documentation
+    status: active
+
+  - name: triage-issue
+    file: skills/triage-issue/SKILL.md
+    description: Investigate a bug or issue, identify root cause, and produce a TDD-based Codeberg/GitHub issue or fix plan
+    category: quality
+    status: active
+
+  - name: ubiquitous-language
+    file: skills/ubiquitous-language/SKILL.md
+    description: Extract and maintain a DDD-style ubiquitous language glossary from conversation and codebase context
+    category: documentation
+    status: active
+
+  - name: write-a-skill
+    file: skills/write-a-skill/SKILL.md
+    description: Create reusable agent skills with clear triggers, concise instructions, progressive disclosure, and optional reference resources
+    category: core
+    status: active
+
+  - name: zoom-out
+    file: skills/zoom-out/SKILL.md
+    description: Give a higher-level map of unfamiliar code areas, relevant modules, callers, and how pieces fit together
+    category: analysis
+    status: active
+
+prompts:
+  - name: build-feature
+    file: skills/build-feature/SKILL.md
+    description: End-to-end build-a-feature template covering planning, implementation, validation, and PR handoff
+    category: workflow
+    status: active
+
+  - name: build-figma-prototype
+    file: skills/build-figma-prototype/SKILL.md
+    description: Translate a Figma design into a working interactive prototype
+    category: workflow
+    status: active
+
+  - name: create-agent
+    file: skills/create-agent/SKILL.md
+    description: Author a new persona-style skill (formerly an agent) with consistent frontmatter and skill bundle references
+    category: workflow
+    status: active
+
+  - name: deploy-to-production
+    file: skills/deploy-to-production/SKILL.md
+    description: Production deployment checklist covering pre-flight, rollout, validation, and rollback
+    category: workflow
+    status: active
+
+  - name: refactor
+    file: skills/refactor/SKILL.md
+    description: Plan and execute a refactor in tiny safe commits with verification at each step
+    category: workflow
+    status: active
+
+  - name: review-code
+    file: skills/review-code/SKILL.md
+    description: Structured code review covering correctness, security, performance, and maintainability
+    category: workflow
+    status: active
+
+  - name: setup-auth
+    file: skills/setup-auth/SKILL.md
+    description: Stand up authentication for a new project including session management and security hardening
+    category: workflow
+    status: active
+
+  - name: setup-database
+    file: skills/setup-database/SKILL.md
+    description: Initial database setup including schema, migrations, seeding, and backup strategy
+    category: workflow
+    status: active
+
+  - name: setup-infra
+    file: skills/setup-infra/SKILL.md
+    description: Stand up project infrastructure (CI, deployment, observability) from a blank slate
+    category: workflow
+    status: active
+
+categories:
+  meta: Agents that manage other agents
+  development: Agents/skills that write or modify code
+  quality: Agents/skills that ensure code quality
+  documentation: Agents/skills that create documentation
+  operations: Agents/skills that handle infrastructure and deployment
+  analysis: Agents/skills that research and analyze
+  core: Foundational skills used by many agents
+  research: Skills for information gathering
+  data: Skills for database design and data management
+  api: Skills for API design and implementation
+  frontend: Skills for frontend development
+  observability: Skills for monitoring, logging, and tracing
+  performance: Skills for performance optimization
+  testing: Skills for test infrastructure and tooling
+  ai-generation: Skills for AI-powered content and asset generation
+  game: Skills and agents specific to game engine APIs, tools, and domain knowledge
+  workflow: Reusable end-to-end task templates (formerly prompts)
