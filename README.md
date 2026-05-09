@@ -2,6 +2,8 @@
 
 A curated catalog of [Hermes Agent CLI](https://hermes-agent.nousresearch.com/docs/user-guide/cli) skills covering software engineering, infrastructure, game development, narrative/audio/level design, documentation, security, testing, and operational triage. The repository contains **only skill configuration** — no application source code.
 
+> **Origin:** Forked from [`aazenkoff/copilot-agent-fabric`](https://github.com/aazenkoff/copilot-agent-fabric) by @aazenkoff. The upstream targets GitHub Copilot CLI; this fork ports the entire skill set to Hermes Agent CLI on Codeberg. See the original repo for the pre-Hermes design intent and history.
+
 Canonical home: [Codeberg](https://codeberg.org/YR-Design/Agent-fabric) · GitHub mirror (used for `hermes skills tap add`): [robouden/Agent-fabric](https://github.com/robouden/Agent-fabric).
 
 ## Architecture
